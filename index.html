@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os gadgets do futuro em uma loja de tecnologia inovadora.">
+    <title>Nexora Tech | O futuro está aqui</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="#" class="logo">NEXORA<span>TECH</span></a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+
+        <button class="botao-carrinho" id="abrir-carrinho">
+            Carrinho <span id="contador-carrinho">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="banner" id="inicio">
+            <p class="subtitulo">TECNOLOGIA • INOVAÇÃO • FUTURO</p>
+
+            <h1>O futuro está<br>
+                <span>ao seu alcance.</span>
+            </h1>
+
+            <p class="descricao-banner">
+                Descubra tecnologias inovadoras que transformam
+                sua rotina e conectam você ao amanhã.
+            </p>
+
+            <a href="#produtos" class="botao-principal">
+                Explorar produtos
+            </a>
+        </section>
+
+        <section class="catalogo" id="produtos">
+            <div class="titulo-secao">
+                <p class="subtitulo">NOSSO CATÁLOGO</p>
+                <h2>Explore o <span>futuro</span></h2>
+                <p>Conheça nossa seleção de gadgets futuristas.</p>
+            </div>
+
+            <div class="ferramentas">
+                <input
+                    type="search"
+                    id="busca-produto"
+                    placeholder="Buscar produto..."
+                    aria-label="Buscar produto pelo nome"
+                >
+
+                <select id="filtro-categoria" aria-label="Filtrar por categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="wearables">Wearables</option>
+                    <option value="casa">Casa Inteligente</option>
+                    <option value="audio">Áudio Avançado</option>
+                </select>
+            </div>
+
+            <div class="grade-produtos" id="lista-produtos">
+                <!-- Os produtos serão exibidos pelo JavaScript. -->
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <p class="subtitulo">SOBRE A NEXORA TECH</p>
+            <h2>Inovação que aproxima você do amanhã.</h2>
+            <p>
+                Exploramos novas possibilidades da tecnologia
+                para tornar o cotidiano mais inteligente,
+                conectado e inovador.
+            </p>
+        </section>
+    </main>
+
+    <aside class="painel-carrinho" id="painel-carrinho" hidden>
+        <div class="topo-carrinho">
+            <h2>Seu carrinho</h2>
+            <button id="fechar-carrinho" aria-label="Fechar carrinho">
+                &times;
+            </button>
+        </div>
+
+        <div id="itens-carrinho">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="total-carrinho">
+            <p>Total: <strong id="valor-total">R$ 0,00</strong></p>
+        </div>
+    </aside>
+
+    <footer class="rodape">
+        <a href="#inicio" class="logo">NEXORA<span>TECH</span></a>
+        <p>© 2026 Nexora Tech. Projeto acadêmico de Desenvolvimento Web.</p>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
